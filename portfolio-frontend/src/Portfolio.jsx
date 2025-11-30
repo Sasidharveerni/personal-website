@@ -7,6 +7,8 @@ import { Separator } from '@/components/ui/separator';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { 
   Code2, 
   Globe, 
@@ -164,9 +166,10 @@ const handleSubmit = (e) => {
             className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-6">Crafting Digital Excellence</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              From enterprise solutions at Tech Mahindra to transformative freelance projects and AI innovation — 
-              I build systems that scale, perform, and inspire trust.
-            </p>
+  Experienced freelance developer specializing in ReactJS, Node.js, and AI-powered web applications. 
+  Delivering premium, budget-friendly solutions for startups and enterprises. Based in Hyderabad, 
+  available for remote projects worldwide.
+</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -349,6 +352,8 @@ const handleSubmit = (e) => {
 
         </div>
       </section>
+       <Analytics />
+      <SpeedInsights />
     </>
   );
 }

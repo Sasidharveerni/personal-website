@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yourdomain.vercel.app/sitemap.xml
+
+# Disallow admin or private routes if you have any
+# Disallow: /admin
